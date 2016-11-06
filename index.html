@@ -24,7 +24,7 @@
         <div class="col-md-12 fade-in one">
           <h1>Racing Game</h1>
           <hr>
-          <div class="instruction">Instruction: Pressing the keys 'Q' and 'P' as quickly as you can to cross the finish line!</div>
+          <div class="instruction">Instruction: Pressing the keys as quickly as you can to cross the finish line!</div>
           <hr>
           <button class="start fade-in two">Let's play!</button>
           <!-- <button class="reset">Reset game</button> -->
@@ -36,10 +36,30 @@
         <!-- a column represents our game board -->
         <!-- the `offset` class helps us center the board -->
         <div class="col-md-12" id="board">
-
+          <div id='pole1' class='pole'></div>
+          <div id='pole2' class='pole'></div>
         </div>
       </div>
+      <div id="countContainer"> <h2> Count: </h2></div>
     </div>
+
+   <script type="text/javascript">
+
+    var current_count= 5;
+
+    function countDown() {
+            var countVal = "<h2>Ready?</h2>";
+            if ( current_count >= 1 ) {
+               countVal = "<h2> Count Down: " + current_count + "</h2>";
+               current_count--;
+            }else {
+               clearInterval(countJob);
+               countVal = "<h2>Race starts!</h2>";
+            }
+            document.getElementById("countContainer").innerHTML = countVal;
+    }
+    var countJob = setInterval("countDown()", 1000);
+    </script>
 
     <script src="js/jquery-3.1.1.js"></script>
     <!-- <script type="text/javascript" src="js/app.js"></script> -->

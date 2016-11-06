@@ -45,6 +45,15 @@ h1 {
   font-style: italic;
 }
 
+h2 {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  font-style: italic;
+}
+
 .instruction {
   font-family: 'Amatica SC', cursive;
   font-size: 30px;
@@ -53,6 +62,7 @@ h1 {
 }
 
 #car1 {
+  position: absolute;
   margin: 200px;
   margin-left: 0;
   padding-left: 0;
@@ -60,9 +70,26 @@ h1 {
 }
 
 #car2 {
-  margin: 10px;
+  position: absolute;
+  margin: 500px;
   margin-left: 0;
   padding-left: 0;
+}
+
+.pole {
+  position: absolute;
+  height: 130px;
+  width: 50px;
+  background-color: red;
+  right: -50px;
+}
+
+#pole1 {
+  top:0;
+}
+
+#pole2 {
+  bottom:0;
 }
 
 img {
