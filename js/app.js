@@ -1,6 +1,3 @@
-$('.reset').on('click', function(){
-    location.reload();
-  });
 
 // $('.start').on('click', function(){
 //     $(".text-center").remove();
@@ -44,7 +41,9 @@ function startGame(){
   playerList.push(player2);
 
   function isWin(e){
-    alert("The driver of "+ e.id + " wins!");
+    alert(e.id + " wins!");
+    location.reload();
+
   }
 
   $(document).keydown(function(e){
@@ -97,9 +96,6 @@ function startGame(){
             break;
           }
       }
-
-      console.log(count1);
-      console.log(count2);
 
   });
 

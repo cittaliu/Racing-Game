@@ -56,8 +56,9 @@ h2 {
 .instruction {
   font-family: 'Amatica SC', cursive;
   font-size: 30px;
-  font-weight: bolder;;
+  font-weight: bold;;
   color: grey;
+  text-align: left;
 }
 
 /*#board1 {
@@ -117,7 +118,14 @@ h2 {
   bottom:0;
 }*/
 
+li {
+  font-family: 'Amatica SC', cursive;
+  font-size: 25px;
+  color: grey;
+  font-weight: bold;
+  text-align: left;
 
+}
 
 img {
   height: 100px;
